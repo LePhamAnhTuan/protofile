@@ -42,9 +42,9 @@ const IchatTitle = () => {
                 <div className="bg-white shadow-2xl rounded-2xl p-4 border border-blue-500">
                     <ul className='font-dancing'>
                         <li className="font-bold">About me</li>
-                        <li className="">My name: Lê Phạm Anh Tuấn</li>
-                        <li className="">Address: Phú Nhuận, TP.Hồ Chí Minh, Việt Nam</li>
-                        <li className="">Birthday: 02/11/1998</li>
+                        <li >My name: Lê Phạm Anh Tuấn</li>
+                        <li >Address: Phú Nhuận, TP.Hồ Chí Minh, Việt Nam</li>
+                        <li >Birthday: 02/11/1998</li>
                     </ul>
                 </div>
 
@@ -77,7 +77,7 @@ const IchatTitle = () => {
                 <div className="bg-white shadow-2xl rounded-2xl p-4 border border-green-500">
                     <ul className='font-dancing'>
                         <li className="font-bold" >Other</li>
-                        <li className="max-w-[500px]">I'm passionate about learning new technologies and always keep concentrated on improving my self skills. Being patient and responsible for working help me implement completely assigned tasks. </li>
+                        <li className="max-w-[500px]">I am passionate about learning new technologies and always keep concentrated on improving my self skills. Being patient and responsible for working help me implement completely assigned tasks. </li>
 
                     </ul>
                 </div>

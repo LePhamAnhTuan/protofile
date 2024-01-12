@@ -23,9 +23,6 @@ export default function RootLayout(props: Props) {
   const Header = dynamic(() => import("@/components/AppBar"), { ssr: true });
   return (
     <html lang="en">
-      <Head>
-        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossOrigin="anonymous"></script>
-      </Head>
       <body className={cn(inter.className,
         "bg-fixed  max-w-full min-h-screen "
       )}>

@@ -39,8 +39,7 @@ const protofile = () => {
                     What led you to web development?
                 </IchatRight>
                 <IchatLeft>
-
-                    "Web developers often find it exciting to have the ability to create dynamic and interactive online experiences. The flexibility and creative potential of web programming can spark curiosity and a desire to explore more about information technology. Additionally, web development provides a means to engage in the software development community and address real-world problems.
+                    Web developers often find it exciting to have the ability to create dynamic and interactive online experiences. The flexibility and creative potential of web programming can spark curiosity and a desire to explore more about information technology. Additionally, web development provides a means to engage in the software development community and address real-world problems.
                 </IchatLeft>
             </div>
             <div className="h-[200px] py-10 ">
