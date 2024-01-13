@@ -83,14 +83,13 @@ const AppBar = async () => {
                     <p className="text-center"> {items[0].name}</p>
                   </div>
                 </Link>
-                <IlogoutButton children={
+                <IlogoutButton >
                   <div className={cn("flex p-4 hover:bg-gray-100 dark:hover:bg-gray-500 rounded-sm",
                   )}>
                     <div className="mr-4">{items[1].icon}</div>
                     <p className="text-center"> {items[1].name}</p>
-                  </div>
-                }>
-                </IlogoutButton>
+                  </div></IlogoutButton>
+
 
               </> :
                 <>

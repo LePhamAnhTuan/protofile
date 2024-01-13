@@ -3,6 +3,7 @@ const nextConfig = {
   experimental: {
     serverActions: true,
   },
+  output: 'standalone',
   webpackDevMiddleware: (config) => {
     // Solve compiling problem via vagrant
     config.watchOptions = {

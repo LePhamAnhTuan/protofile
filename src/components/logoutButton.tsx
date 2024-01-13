@@ -14,8 +14,9 @@ const IlogoutButton = ({ children }: Props) => {
             description='Hẹn gặp lại quý khách'
             typeButton={ButtonVariant.RED}
             onclick={() => signOut({ callbackUrl: "/login" })}
-            children={children}
-        />
+        >
+            {children}
+        </AlertDialogButton>
     )
 }
 
