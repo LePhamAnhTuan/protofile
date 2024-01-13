@@ -11,7 +11,7 @@ export default function Home() {
     {
       icon: <HomeIcon size={70} />,
       title: 'Home page',
-      url: '/homepage'
+      url: '/dashboard'
     },
     {
       icon: <UserRoundSearch />,

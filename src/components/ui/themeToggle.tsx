@@ -15,7 +15,7 @@ import { Button } from "@/components/ui/button"
 export function ModeToggle() {
     const { setTheme, theme, systemTheme } = useTheme()
     React.useEffect(() => {
-        if (systemTheme) setTheme(systemTheme)
+        if (systemTheme) setTheme("light")
     }, [])
 
     return (

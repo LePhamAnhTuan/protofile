@@ -7,7 +7,6 @@ import type { Metadata } from 'next';
 import dynamic from "next/dynamic";
 import { Inter } from 'next/font/google';
 import "./globals.css";
-import Head from "next/head";
 
 export const metadata: Metadata = {
   title: "<Le/Tuan>",
@@ -20,7 +19,7 @@ interface Props {
 const inter = Inter({ subsets: ['latin'] })
 
 export default function RootLayout(props: Props) {
-  const Header = dynamic(() => import("@/components/AppBar"), { ssr: true });
+  const Iheader = dynamic(() => import("@/components/AppBar"));
   return (
     <html lang="en">
       <body className={cn(inter.className,
@@ -33,7 +32,7 @@ export default function RootLayout(props: Props) {
             enableSystem
             disableTransitionOnChange
           >
-            <Header />
+            <Iheader ></Iheader>
             <div className={cn(
               "lg:px-[20px]",
               "md:px-[5px]",
