@@ -1,8 +1,8 @@
 
 import IregisterContent from '@/components/register/registerContent';
+import { authOptions } from '@/lib/auth';
 import { getServerSession } from 'next-auth';
 import React from 'react';
-import { authOptions } from '../api/auth/[...nextauth]/route';
 
 const Register = async () => {
     const session = await getServerSession(authOptions);

@@ -1,8 +1,8 @@
 import { getServerSession } from "next-auth";
 import Link from "next/link";
-import { authOptions } from "../api/auth/[...nextauth]/route";
 import { signOut } from "next-auth/react";
 import { Button } from "@/components/Button";
+import { authOptions } from "@/lib/auth";
 
 type Props = {
   children: React.ReactNode;

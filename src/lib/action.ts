@@ -1,6 +1,6 @@
-import { authOptions } from "@/app/api/auth/[...nextauth]/route";
 import { getServerSession } from "next-auth";
 import { Backend_URL } from "./Constants";
+import { authOptions } from "./auth";
 
 interface httpProps {
     method: string

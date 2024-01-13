@@ -1,4 +1,3 @@
-import { authOptions } from '@/app/api/auth/[...nextauth]/route';
 import wavehand from '@/assets/header/waving-hand-svgrepo-com.svg';
 import {
   Sheet,
@@ -16,6 +15,7 @@ import Link from "next/link";
 import './AppBar.css';
 import NavBarItem from './listItemNav/navItem';
 import IlogoutButton from './logoutButton';
+import { authOptions } from '@/lib/auth';
 
 const AppBar = async () => {
   const session = await getServerSession(authOptions);
