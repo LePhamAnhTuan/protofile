@@ -1,3 +1,4 @@
+import { Backend_URL } from '@/lib/Constants';
 import { authOptions } from '@/lib/auth';
 import type { Metadata, ResolvingMetadata } from 'next'
 import { getServerSession } from 'next-auth';
@@ -13,7 +14,7 @@ export async function generateMetadata(): Promise<Metadata> {
     const id = session.user.id
 
     // fetch data
-    const res = await fetch(`http://localhost:8080/user/${id}`, { method: 'GET' }).then((res) => res.json())
+    const res = await fetch(`${Backend_URL}user/${id}`, { method: 'GET' }).then((res) => res.json())
 
     return res
 }

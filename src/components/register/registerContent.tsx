@@ -18,6 +18,7 @@ import { useForm } from "react-hook-form";
 import * as z from "zod";
 import { useToast } from '../ui/use-toast';
 import { User, roleEnum } from './registerInterface';
+import { Frontend_URL } from "@/lib/Constants";
 const IregisterContent: React.FC<any> = (session: any) => {
   const router = useRouter();
   const { toast } = useToast()
@@ -49,7 +50,7 @@ const IregisterContent: React.FC<any> = (session: any) => {
     registerUser(values)
   }
   const registerUser: any = async (data: User) => {
-    const response: ResponseData = await fetch(`/api/register`, {
+    const response: ResponseData = await fetch(`${Frontend_URL}/api/register`, {
       method: 'POST',
       body: JSON.stringify(data)
     }).then(response => response.json())

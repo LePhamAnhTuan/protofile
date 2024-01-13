@@ -1,9 +1,9 @@
 'use client'
-import React from 'react'
+import { Button } from "@/components/ui/button";
+import { ToastAction } from "@/components/ui/toast";
 import { useToast } from '@/components/ui/use-toast';
-import { Terminal } from 'lucide-react';
-import { Button } from "@/components/ui/button"
-import { ToastAction } from "@/components/ui/toast"
+import { Frontend_URL } from '@/lib/Constants';
+import React from 'react';
 
 interface Props {
     data: string
@@ -11,7 +11,7 @@ interface Props {
 const Ihello = () => {
     const [data, setData] = React.useState('')
     const handleCall = async () => {
-        const res = await fetch('http://localhost:3000/api/hello').then(res => res.json())
+        const res = await fetch(`${Frontend_URL}/api/hello`).then(res => res.json())
         return await setData(res.data.result)
     }
     React.useEffect(() => {
