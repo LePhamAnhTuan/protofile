@@ -16,9 +16,15 @@ import './AppBar.css';
 import NavBarItem from './listItemNav/navItem';
 import IlogoutButton from './logoutButton';
 import { authOptions } from '@/lib/auth';
+// import { authOptions } from '@/lib/auth';
 
 const AppBar = async () => {
-  const session = await getServerSession(authOptions);
+  const session: any = await getServerSession(authOptions);
+
+  if (typeof window !== 'undefined') {
+    // Perform localStorage action
+    localStorage.setItem("token", session?.backendTokens.accessToken);
+  }
   const items = [
     {
       name: 'Tài khoản',

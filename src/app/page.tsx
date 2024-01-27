@@ -20,8 +20,8 @@ export default function Home() {
     },
     {
       icon: <UserRoundSearch />,
-      title: 'Contact',
-      url: '/contact'
+      title: 'App nhắn tin',
+      url: '/chat'
     },
     {
       icon: <UserRoundSearch />,

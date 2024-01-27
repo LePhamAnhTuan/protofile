@@ -5,6 +5,7 @@ import light from '@/assets/footer/bulb-front-color.svg'
 import { cn } from '@/lib/utils'
 import { ArrowUpToLine } from 'lucide-react';
 import { ModeToggle } from '../ui/themeToggle'
+import Link from 'next/link'
 const Ifooter = () => {
     return (
         <div className={cn("w-full fixed bottom-0 h-[30px] px-[10px]",
@@ -20,7 +21,9 @@ const Ifooter = () => {
             <div className="flex justify-around items-center w-[150px]">
                 <Image src={light} alt={'tea-cup'} width={25}></Image>
                 <Image src={teacup} alt={'tea-cup'} width={25} ></Image>
-                <ArrowUpToLine width={25} className='text-orange-400' />
+                <Link href={'#'} >
+                    <ArrowUpToLine width={25} className='text-orange-400' />
+                </Link>
             </div>
         </div>
     )

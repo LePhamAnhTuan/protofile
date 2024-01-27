@@ -48,6 +48,7 @@ const authOptions: NextAuthOptions = {
           return null;
         }
         const user = await res.json();
+
         return user.data;
       },
     }),
@@ -68,6 +69,7 @@ const authOptions: NextAuthOptions = {
     },
 
     async session({ token, session }) {
+
       session.user = token.user;
       session.backendTokens = token.backendTokens;
 

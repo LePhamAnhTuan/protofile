@@ -29,4 +29,15 @@ async function fetchWithBearerToken(url: string, options?: RequestInit, request?
     }
 }
 
-export { fetchWithBearerToken }
+async function getToken() {
+    try {
+        const session = await getServerSession(authOptions); // Lấy session nếu cần
+        const token: any = await session?.backendTokens.accessToken
+        return await token
+    } catch (error) {
+        console.log('error: ', error);
+        throw error; // Re-throw error để xử lý ở nơi gọi hàm
+    }
+}
+
+export { fetchWithBearerToken, getToken }
